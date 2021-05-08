@@ -21,6 +21,7 @@ shinyServer( function(input, output, session) {
     df$gcolor <- df[,input$color_g]
     
     df <- df[,c("xcol", "ycol", "gcolor")]
+    df <- subset(df, !is.na(df$xcol) & !is.na(df$ycol))
   })
   
   observe({

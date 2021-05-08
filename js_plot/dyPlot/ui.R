@@ -6,6 +6,7 @@ shinyUI( bootstrapPage(
   # include the js code
   includeScript("./www/js/d3.min.js"),
   includeScript("./www/js/custom.js"),
+  includeCSS("./www/css/custom.css"),
   
   sidebarLayout(
     
